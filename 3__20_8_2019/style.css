@@ -1,0 +1,90 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    color: #C2D7EA;
+}
+
+ul{
+    margin: 0px 0px 0px 20px;
+}
+
+a{
+    font-size: 21px;
+    
+}
+#wrapper
+{
+    width: 970px;
+    height: 1000px;
+    padding: 5px 0px 0px 0px;
+    background-color: #1A335D;
+}
+
+#wrapper div
+{
+    border-radius: 20px;
+}
+
+#header
+{
+    margin: 10px;
+    padding: 20px;
+    background-color: #CF2F35;
+    display: block; 
+    font-weight: 800;
+}
+#header h1{
+    font-size: 45px;
+    font-weight: 900;
+}
+
+#menu
+{
+    width: 300px;
+    height: 310px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #297D8C;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#main
+{
+    margin: 10px;
+    padding: 10px;
+    width: 624px;
+    height: 800px;
+    background-color: black;
+    display: inline-block;
+}
+
+#footer
+{
+    margin: 10px;
+    padding: 10px;
+    display: block;
+    background-color: #5D6573;    
+}
+
+#menu a
+{
+    font-weight: bold;
+    color: #66DAE5;
+}
+
+.hilighter { 
+    color: #66DAE5;
+    text-decoration: underline; 
+} 
+.hilighter a { 
+    color: #66DAE5;
+    text-decoration: none; 
+} 
+.Command
+{
+    color: #748EFF;
+}
+

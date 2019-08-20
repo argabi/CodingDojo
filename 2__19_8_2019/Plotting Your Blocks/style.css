@@ -2,7 +2,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    
+    box-sizing: border-box;
    }
 
    #wrapper
@@ -36,7 +36,7 @@
    {
     min-height: 400px;
     width: 700px;
-    margin: auto 35px;
+    margin: auto 20px;
     padding: 20px;
     display:  inline-block;
     vertical-align: top;
@@ -47,7 +47,8 @@
    {
     min-height: 200px;
     width: 210px;
-     margin: 10px;
+     margin: 20px;
+     padding: 20px;
     display: inline-block;
     background-color: yellow;
    }
@@ -56,7 +57,7 @@
    {
     min-height: 120px;
     width: auto;
-    margin: 5px;
+    margin: 20px;
     background-color: purple;
    }
    
