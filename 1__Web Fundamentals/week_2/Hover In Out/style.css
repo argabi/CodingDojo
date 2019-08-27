@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* outline: 1px solid royalblue; */
+}
+#container
+{
+height: 200px;
+width: 580px;
+background-color: brown;
+}
+
+.imageBox{
+    display: inline-block;
+}
+.imageBox img
+{
+    width: 128px;
+    height: 128px;
+    border: 2px solid yellow;
+    display: inline-block;
+}

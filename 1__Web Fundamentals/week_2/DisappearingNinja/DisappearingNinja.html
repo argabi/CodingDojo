@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Disappearing Ninja</title>
+    <script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+
+    <script type="text/javascript">
+
+
+        $(document).ready(function () {
+            
+            // $(this).replaceWith($('<h5>' + this.innerHTML + '</h5>'));
+
+            $('.imageBox img').click( function () {
+                //in
+                $(this).hide();
+            })
+
+            $('.button').click( function () {
+                //in
+                $('.imageBox img').show();
+            })
+
+           
+        });
+
+    </script>
+
+</head>
+
+<body>
+
+    <div id="container">
+        <div class="imageBox">
+            <img src="ninja.ico" alt="Error Img">
+
+        </div>
+
+        <div class="imageBox">
+            <img src="ninja.ico" alt="Error Img">
+
+        </div>
+
+        <div class="imageBox">
+            <img src="ninja.ico" alt="Error Img">
+
+        </div>
+
+        <div class="imageBox">
+            <img src="ninja.ico" alt="Error Img">
+
+        </div>
+
+        <div class="imageBox">
+            <img src="ninja.ico" alt="Error Img">
+
+        </div>
+
+        <div class="imageBox">
+            <img src="ninja.ico" alt="Error Img">
+
+        </div>
+
+        <div class="imageBox">
+            <img src="ninja.ico" alt="Error Img">
+
+        </div>
+
+        <div class="imageBox">
+            <img src="ninja.ico" alt="Error Img">
+
+        </div>
+
+            <h2 class="button">Restore</h2>
+    </div>
+
+</body>
+
+</html>
