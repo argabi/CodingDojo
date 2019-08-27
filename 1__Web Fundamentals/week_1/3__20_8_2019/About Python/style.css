@@ -1,0 +1,103 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    /* outline: 1px solid greenyellow; */
+}
+body
+{
+    background-color: brown;
+}
+#wrapper
+{
+    
+    width: 970px;
+    height: 1000px;
+    background-color: white;
+
+    margin: 10px;
+    
+   
+  
+}
+#bigBlue
+{
+    width: 970px;
+    height: 700px;
+    padding: 0px;
+    background-color: #245075;
+
+    border: 5px  #193753;
+    border-bottom-style: solid;
+}
+.header_bigBlue
+{
+    width: 970px;
+    height: 70px;
+    padding: 0px;
+  
+    
+}
+.logo
+{
+    width: 400px;
+    height: auto;
+    position: relative;
+    top: 30px;
+    padding: 10px;
+}
+.menuBar ul
+{
+    list-style: none;
+    
+}
+.menuBar li
+{
+    font-size:  24px;
+    padding: 10px;
+    
+}
+.menuBar ul li:before 
+{
+ content: "\00BB \0020"; 
+}
+
+.blackBox
+{
+    width: 430px;
+    height: 111px;
+    background-color: #444444;
+    border-radius: 20px;
+
+    border: 5px  #1D262E;
+    border-bottom-style: solid;
+    border-right-style: solid;
+    position: absolute;
+    left: 535px;
+    top: 55px;
+}
+#textField
+{
+    width: 250px;
+    height: 70px;
+    position: relative;
+    left: 57px;
+    top: 19px;
+    border-style: inset;
+    text-align: center;
+}
+.blackBox button
+{
+    width: 80px;
+    height: 50px;
+    background-color: #245076;
+    position: relative;
+    left: 63px;
+    top: 22px;
+    border-style: inset;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+}

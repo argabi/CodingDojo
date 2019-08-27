@@ -1,0 +1,221 @@
+<html>
+
+<head>
+	<title>1942 Game</title>
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+	<div id='container'>
+
+		<div id='hero'></div>
+		<div id='enemies'></div>
+		<div id='bullets'></div>
+
+		<div id='score'>0</div>
+		<div id='lives'>5</div>
+
+	</div>
+	
+	</div>
+
+
+
+
+	<script>
+
+		var hero = {
+			x: 300,
+			y: 530
+		};
+
+		var enemies = [{ x: 50, y: 50 },
+		{ x: 100, y: 50 },
+		{ x: 200, y: 50 },
+		{ x: 250, y: 50 },
+		{ x: 400, y: 50 },
+		{ x: 450, y: 50 },
+		{ x: 550, y: 50 }]; // 7 enemies
+
+		var bullets = [];
+
+		function displayHero() {
+			document.getElementById("hero").style["top"] = hero.y + "px";
+			document.getElementById("hero").style["left"] = hero.x + "px";
+		}
+		displayHero();
+
+		function displayEnemies() {
+			var output = "";
+
+			for (var i = 0; i < enemies.length; i++) {
+				output += "<div class='enemy1' style='top:" + enemies[i].y + "px; left:" + enemies[i].x + "px;'></div>";
+
+
+			}
+			document.getElementById("enemies").innerHTML = output;
+		}
+		displayEnemies();
+
+		function moveEnemies() {
+			for (var i = 0; i < enemies.length; i++) {
+				enemies[i].y += 5;
+				if (enemies[i].y > 540) {
+					enemies[i].y = 0;
+					enemies[i].x = Math.random() * 500;
+				}
+			}
+		}
+
+		function moveBullets() {
+			for (var i = 0; i < bullets.length; i++) {
+				bullets[i].y -= 5;
+
+				/* 1 ,,2 3 4 5 6 7 .. etc
+				if i wantto get rid of 1, one method is
+				10 ,2 ,3 4 5 6 7 8 9
+				*/
+				if (bullets[i].y < 0) //out bound "in top" 
+				{
+					bullets[i] = bullets[bullets.length - 1];
+					bullets.pop();
+
+				}
+			}
+		}
+
+		function displayBullets() {
+			var output = "";
+			for (var i = 0; i < bullets.length; i++) {
+				output += "<div class='bullet' style='top:" + bullets[i].y + "px; left:" + bullets[i].x + "px;'></div>";
+			}
+			document.getElementById("bullets").innerHTML = output;
+		}
+
+		var audio = new Audio('bom_Sound.mp3');
+		function detectionCollision() {
+			var output ="";
+			for (var i = 0; i < bullets.length; i++) {
+				for (var j = 0; j < enemies.length; j++) {
+					//bullets
+					if (Math.abs(bullets[i].x - enemies[j].x) < 10 && Math.abs(bullets[i].y - enemies[j].y) < 10) {	
+						
+						
+						audio.play();
+						
+						theScore += 10;
+
+						bullets[i] = bullets[bullets.length - 1];
+						bullets.pop();
+
+						enemies[j].y = 0;
+						enemies[j].x = Math.random() * 500;
+						
+						audio.currentTime = 0;
+						
+						
+						
+					}
+				}
+			}
+
+			var output = "";
+			for (var j = 0; j < enemies.length; j++) {
+				//hero crushs the enemies
+				if (Math.abs(enemies[j].x - hero.x) < 25 && Math.abs(enemies[j].y - hero.y) < 15) {
+
+					document.getElementById("hero").style.backgroundPosition = "-111px -32px"; //explotion
+					theEnemieNum = j;
+					theLives --;
+
+
+					setTimeout(againPlay, 130);
+					break;
+
+				}
+			}
+		}
+		var theLives =5;
+		var theScore = 0;
+		function displayScore() {
+			
+			document.getElementById("lives").innerHTML = theLives;
+			
+			
+			document.getElementById("score").innerHTML = theScore;
+		}
+
+		var theEnemieNum;
+		function againPlay() {
+			if(theLives <=0)
+			{
+				alert("game over");
+				location.reload();
+			}
+
+			hero.x=300;
+			hero.y=530;
+			enemies[theEnemieNum].y = 0;
+			enemies[theEnemieNum].x = Math.random() * 500;
+			document.getElementById("hero").style.backgroundPosition ="-85px -180px"; //heroe airplane
+		}
+
+		//moveing
+		document.onkeydown = function (e) {
+
+			if (e.keyCode == 37  && hero.x >=10)//left
+			{
+				hero.x -= 10;
+			}
+			else if (e.keyCode == 39 && hero.x <=740)//right
+			{
+				hero.x += 10;
+			}
+			else if (e.keyCode == 38 && hero.y >=300)//up
+			{
+				hero.y -= 10;
+			}
+
+			else if (e.keyCode == 40 && hero.y <= 530)//down
+			{
+				hero.y += 10;
+			}
+
+			//bullets
+			if (e.keyCode == 32)//spacebar
+			{
+				bullets.push({ x: hero.x + 6, y: hero.y - 15 });
+				displayBullets();
+			}
+
+
+
+		}
+
+		function gameLoop() {
+
+			displayHero();
+
+			moveEnemies();
+			displayEnemies();
+
+			moveBullets();
+			displayBullets();
+
+			
+			displayScore();
+
+		}
+		setInterval(gameLoop, 50);
+
+
+		setInterval(detectionCollision, 150);
+
+
+
+	</script>
+
+</body>
+
+</html>

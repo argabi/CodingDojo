@@ -1,0 +1,230 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    /* outline: 1px solid gold; */
+}
+.wrapper
+{
+    width: 980px;
+    height: 1400px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #1A1A1A;
+}
+.logo
+{
+    margin: 10px;
+}
+ .wrapper h3
+{
+    position: absolute;
+    margin: 10px;
+    left : 750px;
+    top: 13px;
+    font-size:  20px;
+    color: #C9CDCF; 
+    font-weight: 700;
+}
+.menuBar
+{
+    width: 980px;
+    height: 80px;
+    background-color: #4A4A4A;
+  
+    background-image: linear-gradient(to top ,#525252,#1A1A1A,#525252); 
+    display: inline-block;
+}
+.menuBar ul
+{
+    width :900px;
+    height: 50px;
+    margin: 10px;
+    display: inline-block;  
+}
+.menuBar ul li
+{
+    margin: 1px;
+    padding: 15px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 800;
+    color: #989898;
+    height: 16px;
+    border: 3px  #4F4F4F;
+    border-right-style: solid;
+}
+.menuBar .HomeButton
+{
+    /* color: #DBD8C9; */
+    color: #E4E4E4;
+}
+ .boxOnRight
+{
+    display: inline-flex;
+    border: 3px #4F4F4F;
+    border-right-style: solid;
+    height: 80px;
+    position: absolute;
+    left: 937px;
+}
+.bigImage
+{
+    width: 980px;
+}
+.wrapper .fourTexts
+{
+    width: 960px;
+    height: 200px;
+    margin-top :-1px;
+    padding: 10px;
+    background-color: #1A1A1A;
+    display: inline-block;
+    border: 5px  #3B3B3B;
+    border-top-style: solid;
+}
+.wrapper .fourTexts .the4TextsBox
+{
+    width: 215px;
+    height: 180px;
+    margin:10px;
+    display: inline-block;
+    vertical-align: top;
+}
+.wrapper .fourTexts .the4TextsBox img
+{
+    width: 50px;
+    height: auto;
+    margin:0px;
+    padding: 0px;
+    display: inline-block;
+}
+.wrapper .fourTexts .the4TextsBox h5
+{
+    margin-top: 10px;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: top;
+    color: #E1782A;
+    font-size: 18px;
+}
+.wrapper .fourTexts .the4TextsBox p
+{
+    color: #E4E4E4;
+    display: block;
+    width:150px;
+    position: relative;
+    left: 60px;
+}
+.wrapper .midTextwithButton
+{
+    width: 960px;
+    height: 130px;
+    margin-top :-1px;
+    padding: 10px;
+    background-color: #050505;
+    display: inline-block;
+}
+.wrapper .midTextwithButton h2
+{ 
+    padding: 20px;
+    color :#E4E4E4;
+    display:inline-block;
+}
+.wrapper .midTextwithButton p
+{
+    display:block;
+    margin-left: 20px;
+    width: 700px;
+    color:#989898; 
+    font-size: 18px;
+}
+.wrapper .midTextwithButton h3
+{
+    display:inline-block;
+    background-image: linear-gradient(to top ,#F29956,#F08B40,#EF802E); 
+    width: 110px;
+    height: 25px;
+    color:white; 
+    font-size: 21px;
+    font-weight: 500;
+    position: relative;
+    top: -85px;
+    left: 790px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+.theLast
+{
+    width: 960px;
+    height: 430px;
+    margin-top :-1px;
+    padding: 10px;
+    /* background-color: blue; */
+    display: inline-block;
+}
+.groupImgInfo
+{
+    display: inline-block;
+    width: 215px;
+    height: 384px;
+    padding: 10px;
+}
+
+.theLast .groupImgInfo .the4Imges
+{
+    width: 199px;
+    height: 180px;
+    margin:5px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    top: -5px;
+    border: 5px solid #363636;
+}
+.wrapper .theLast h2
+{
+    padding: 15px;
+    color :#E4E4E4;
+}
+.wrapper .theLast h6
+{
+    padding: 15px;
+    color :#E1782A;
+    position: absolute;
+
+    top :932px;
+    left : 830px;
+    font-size: 14px;
+    font-style: italic;
+}
+.wrapper .theLast .groupImgInfo h5
+{
+    position: relative;
+    margin-top: 10px;
+    margin-left: 5px;
+    display: inline-block;
+    vertical-align: top;
+    color: #E1782A;
+    font-size: 18px;
+}
+.wrapper .theLast .groupImgInfo h4
+{
+    color: #E4E4E4;
+    display: block;
+    width: 210px;
+    height: 146px;
+    margin: 5px;
+    font-size: 14px;
+    position: relative;
+    top : 10px;
+}
+.wrapper .theLast  .backToTop
+{
+    color: #989898;
+    position: relative;
+    left:865px;
+    top :-10px;
+    font-size: 14px;
+}

@@ -1,0 +1,241 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    /* outline: 1px solid pink; */
+    overflow: hidden;
+}
+#continer
+{
+    background-color: aquamarine;
+    width: 1000px;
+    height: 1000px;
+    
+}
+#continer div.header
+{
+    display: block;
+    background-color:#FBFBFB;
+    padding: 10px;
+    
+}
+
+#continer div.header div.jayne_doe
+{
+    width: 300px;
+   display: inline-block;
+}
+
+#continer div.info
+{
+    width: 500px;
+   display: inline-block;
+   float: right;
+}
+ .boxBody 
+{
+    font-size: 17px;
+    padding: 10px;
+}
+
+.boxBody a
+{
+    color: black;
+}
+#continer div.main
+{
+    padding: 10px;
+    
+    width: 1000px;
+    height: 876px;
+    background-image: linear-gradient(to bottom,#2D1C22,#4d3a42,#6f5964,#4d3a42,#2D1C22); 
+}
+.main .groupTop
+{
+    width: 980px;
+    height: 300px;
+    padding-top: 10px;
+    display: inline-block;
+}
+.main .groupTop img
+{
+    width: 440px;
+    height:280px;
+    border:5px solid #C0C0C0; 
+}
+.main .box
+{
+    display: inline-block;
+    width: 520px;
+    height:280px;
+    background-image: linear-gradient(to right,#fefdfe ,#ddcfdc);
+    position: relative;
+    left: 15px;
+}
+.main .boxTitle
+{
+    display: inline-block;
+    
+    width: 520px;
+    height:50px;
+    background-image: linear-gradient(to bottom,#8B8996 ,#ABABB0,#8B8996);
+    padding: 12px;
+    color: white;  
+}
+
+.main .the3boxes
+{
+    display: inline-block;
+    
+    width: 313px;
+    height:545px;
+    background-image: linear-gradient(to right,#fefdfe ,#ddcfdc);
+    margin-right: 10px;
+    
+
+}
+.the3boxes .the3boxes_Body
+{
+    width: 313px;
+    height: 258px;
+    position: absolute;
+}
+.main .the3boxes p
+{
+    height: auto;
+    font-size: 18px;
+    position: relative;
+    left: 12px;
+    width: 290px;
+    display: block;
+}
+.main .the3boxes_Title
+{
+    display: inline-block;
+    
+    width: 520px;
+    height:50px;
+    background-image: linear-gradient(to bottom,#8B8996 ,#ABABB0,#8B8996);
+    padding: 12px;
+    color: white;  
+}
+
+.the3boxes_Body img
+{
+    width: 311px;
+    height :120px;
+}
+
+.main .the3boxes_taill
+{
+    width: 520px;
+    height:50px;
+    background-image: linear-gradient(to bottom,#8B8996 ,#ABABB0,#8B8996);
+    padding: 12px;
+    color: white; 
+    position: relative; 
+    top: 260px;
+}
+
+.the3boxes_taill_footer
+{
+    display: inline-block;
+    width: 310px;
+    height: auto;
+    position: relative;
+    top: 262px;    
+}
+.the3boxes_taill_footer img
+{
+    width: 40px;
+    height:40px;
+    
+}
+
+.the3boxes_taill_footer ul
+{
+    width: 300px;
+    height: auto;
+    position: relative;
+    margin: 10px;
+    
+}
+.the3boxes_taill_footer ul li
+{
+    display: inline-block;
+    margin: 5px;
+    position: relative;
+}
+
+.button
+{
+    display: block;
+    background-color: #407D61;
+    color: white;
+    font-size: 18px;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    position: relative;
+    left: 93px;
+    top: 262px;
+    border-radius: 20px;
+    padding: 2px;
+    font-weight: 800;
+    
+}
+.button2
+{
+    display: block;
+    background-color: #407D61;
+    color: white;
+    font-size: 18px;
+    width: 150px;
+    height: 25px;
+    text-align: center;
+    position: relative;
+    left: 90px;
+    top: 262px;
+    border-radius: 20px;
+    padding: 2px;
+    font-weight: 800;
+    
+}
+
+div.footer
+{
+    display: block;
+    background-color:#F5F5F5; 
+    
+    
+}
+
+div.footer p
+{
+    font-size: 18px;
+    text-align: center;
+}
+
+div.footer .contactInfo ul li
+{
+    display:inline-block;
+    width :auto;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    vertical-align: top;
+    position: relative;
+    left: 311px;
+    font-size: 18px;
+    
+}
+
+div.footer .contactInfo ul li img
+{
+    width:20px;
+    height:20px;
+    vertical-align: top;
+    padding: 1px;
+    
+}
+

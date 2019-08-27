@@ -1,0 +1,267 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    width: 1000px;
+    height: 1255px;
+    margin: 0px auto;
+    background-color: black;
+}
+
+.header{
+    width: 980px;
+    height: 90px;
+    background-color:#262626; 
+    position: relative;
+    left: 10px;
+    right: 10px;   
+}
+
+.header span{
+    color: whitesmoke;
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    top: -35px;
+    left: 620px;
+    font-weight: bold;
+
+}
+
+.logo{
+    width: 250px;
+    height: 90px;
+}
+
+.menu{
+    width: 980px;
+    height: 30px; 
+    position: relative;
+    left: 10px;
+    right: 10px;
+    background-image: linear-gradient(grey,#262626);
+}
+
+.menu ul{
+    color: rgb(162, 160, 160);
+    font-weight: bold;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    top: -30px;
+    left: 70px;
+    display: flex;
+    
+}
+
+.menu li{
+    padding: 20px;
+    list-style: none;
+    
+}
+
+
+
+.home{
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    top: 6px;
+    left: 15px;
+}
+
+.menu ul span{
+    margin-top: 15px;
+    color: rgb(162, 160, 160);
+    font-size: 20px
+}
+
+.contact{
+    color: rgb(162, 160, 160);
+    font-weight: bold;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 490px;
+    margin-top: -65px;
+    display: flex;
+   
+}
+
+.line{
+    margin-left: 950px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    margin-top: -17px;
+    color: rgb(162, 160, 160);
+    font-size: 20px
+}
+
+.main_image{
+    width: 980px;
+    height: 350px; 
+    position: relative;
+    left: 10px;
+}
+
+.info{
+    width: 980px;
+    height: 150px;
+    background-color: #262626; 
+    position: relative;
+    left: 10px;
+    right: 10px;  
+}
+
+.info_sub{
+display: inline-block;
+width: 230px;
+height: 100px;
+margin: 5px;
+margin-top: 10px;
+}
+
+.icons{
+    width: 50px;
+    height: 30px;
+    display: flex;
+    margin-top: 10px;
+}
+
+.info_sub span{
+    color: #BF612A;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    position: relative;
+    top: -25px;
+    left: 70px;
+}
+
+.info_sub P{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    position: relative;
+    top: -20px;
+    left: 70px;
+    margin-right: 70px;
+    
+}
+
+.ad{
+    
+    width: 980px;
+    height: 140px;
+    position: relative;
+    left: 10px;
+    right: 10px; 
+    margin: 20px;
+}
+
+.ad h3{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.ad p{
+
+    color: lightgray;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    margin-right: 300px;
+}
+
+.ad button{
+    background-color: #BF612A;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    margin-left: 750px;
+    position: relative;
+    top: -40px;
+}
+
+.portfolio{
+    width: 980px;
+    height: 450px;
+    background-color: #262626;  
+    position: relative;
+    left: 10px;
+    right: 10px; 
+}
+
+.portfolio h2{
+    color: white;
+    display: inline;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 10px;
+    font-size: 15px;
+    position: relative;
+    top:25px;
+}
+
+.portfolio span{
+    color: #BF612A;
+    font-family: 'Open Sans', sans-serif;
+    display: inline;
+    font-size: 15px;
+    margin-left: 745px;
+    position: relative;
+    top:25px;
+
+}
+
+.content{
+    width: 960px;
+    height: 370px;
+    position: relative;
+    left: 10px;
+    top: 50px;
+}
+
+.sub_content{
+    display: inline-block;
+    width: 220px;
+    height: 350px;
+    margin: 5px;
+    margin-top: 10px;
+    }
+
+    .img{
+        width: 220px;
+        height: 150px;
+        border: 2px solid rgb(98, 97, 97);
+    }
+
+    .sub_content span{
+        color: #BF612A;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+        position: relative;
+        left: -740px;
+    }
+
+    .sub_content p{
+
+    color: lightgray;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    margin-top: 50px;
+    }
+
+    .footer{
+        color: rgb(162, 160, 160);
+        position: relative;
+        left: 850px;
+
+    }

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pac-Man Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="world"></div>
+        <div id="pacman"></div>
+        <div id="score">0</div>
+    </div>
+
+
+
+    <script>
+        var world = [ //2 brick , 1 coin
+            [2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+            [2, 0, 1, 1, 2, 1, 1, 1, 1, 2],
+            [2, 1, 1, 1, 2, 1, 4, 1, 1, 2],
+            [2, 1, 1, 1, 2, 1, 1, 1, 1, 2],
+            [2, 1, 1, 1, 2, 1, 1, 1, 1, 2],
+            [2, 1, 1, 1, 4, 2, 2, 2, 1, 2],
+            [2, 1, 4, 1, 1, 1, 1, 2, 1, 2],
+            [2, 1, 1, 1, 1, 1, 1, 1, 1, 2],
+            [2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
+        ];
+        var wordDic = {
+            2: 'brick',
+            1: 'coin',
+            0: 'empty',
+            4:'cherry'
+        }
+
+        var pacman = {
+            x:1,
+            y:1
+        };
+
+        var pacmanDirection ={
+            
+            "U":"rotate(270deg)",  //up
+            "R":"rotate(0deg)",    //right
+            "D":"rotate(90deg)",    //down
+            "L":"rotate(180deg)"    //left
+        }
+        var theDirection ="R";
+
+        var theScore =0;
+
+        function displayWorld() {
+            var output = "";
+
+            for (var row = 0; row < world.length; row++) {
+                output += "<div class ='row'>";
+                for (var x = 0; x < world[row].length; x++) {
+                    output += "<div class ='" + wordDic[world[row][x]] + "'></div>"
+
+                }
+                output += "</div>";
+            }
+
+            // for (var i = 0; i < world.length; i++) {
+            //     output += "\n<div class='row'>\n";
+            //     for (var j = 0; j < world[i].length; j++) {
+            //         if (world[i][j] == 2)
+            //             output += "<div class='brick'></div>";
+            //         else if (world[i][j] == 1)
+            //             output += "<div class='coin'></div>";
+            //         if (world[i][j] == 0) {
+            //             output += "<div class='empty'></div>";
+            //         }
+
+            //     }
+            //     output += "\n</div>";
+
+
+            // }
+            // console.log(output);   
+            document.getElementById("world").innerHTML = output;
+        }
+        displayWorld();
+
+        function displayPacMan()
+        {
+            document.getElementById("pacman").style.left = pacman.x*20 +"px";
+            document.getElementById("pacman").style.top = pacman.y*20 +"px";
+
+            document.getElementById("pacman").style.transform = pacmanDirection[theDirection];
+        }
+        displayPacMan();
+
+        function displayScore()
+        {
+            document.getElementById("score").innerHTML= theScore;
+        }
+        displayScore();
+
+
+
+    //moveing
+        document.onkeydown =function(e)
+        {
+            if(e.keyCode ==38 && world[pacman.y-1][pacman.x] != 2)//up
+            {
+                theDirection="U";
+                pacman.y --;
+            }
+            if(e.keyCode ==39 && world[pacman.y][pacman.x+1] !=2)//right
+            {
+                theDirection="R";
+                pacman.x ++;
+            }
+            if(e.keyCode ==40 && world[pacman.y+1][pacman.x] !=2)//down
+            {
+                theDirection="D";
+                pacman.y ++;
+            }
+            if(e.keyCode ==37 && world[pacman.y][pacman.x-1] !=2)//left
+            {
+                theDirection="L";
+                pacman.x --;
+            }
+
+            if(world[pacman.y][pacman.x]==1)
+            {
+                world[pacman.y][pacman.x]=0;
+                theScore +=10;
+
+                // updateing
+                displayWorld(); 
+                displayScore ();
+            }
+
+            if(world[pacman.y][pacman.x]==4)
+            {
+                world[pacman.y][pacman.x]=0;
+                theScore +=50;
+                
+                // updateing
+                displayWorld(); 
+                displayScore ();
+            }
+
+
+            displayPacMan();
+        }
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
