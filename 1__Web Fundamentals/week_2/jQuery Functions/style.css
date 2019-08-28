@@ -1,0 +1,64 @@
+*
+{
+    /* outline: 1px solid yellow; */
+}
+body
+{
+    max-width: 777px;
+    margin: auto;
+    background-color: brown;
+}
+h1
+{
+   text-align: center;
+}
+.theFunctionBox
+{
+ 
+    border: 2px solid cadetblue;
+    padding-bottom: 10px;
+    margin: 10px;
+}
+.theFunctionBox h1
+{
+    color: wheat;
+}
+.theFunctionBox hr
+{
+    width: 300px;
+}
+button
+{
+    text-align: center;
+    font-size: 18px;
+    background-color: greenyellow;
+    width: 100px;
+    margin-left: 340px;
+}
+.theFunctionBox img
+{
+    width: 100px;
+    margin-left: 340px;
+}
+#theP
+{
+    font-size: 21px;
+    text-align: center;
+}
+.blueClase
+{
+    color: blue;
+}
+#theInMiddle ,#theP_HTML ,#theTXT
+{
+    font-size: 21px;
+    text-align: center;
+    color: white;
+}
+#txtBox
+{
+    width: 730px;
+    font-size: 18px;
+    text-align: center;
+     margin: 10px ;
+}

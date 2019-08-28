@@ -1,12 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>jQuery Functions</title>
+    <script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+
+    <script>
+
+
+        $(document).ready(function () {
+            //1. click
+            $('#clickMe').click(function () {
+
+                alert("1. clicked :: Hi there I  am Ali")
+            });
+            //2
+            $('#hideButton').click(function () {
+
+                $("#hideShowImage").hide();
+            });
+            //3
+            $('#showButton').click(function () {
+
+                $("#hideShowImage").show();
+            });
+            //4
+            $('#toggleButton').click(function () {
+
+                $("#toggleImage").toggle();
+            });
+            //5
+            $('#slideDownButton').click(function () {
+
+                $("#slideImage").slideDown();
+            });
+            //6
+            $('#slideUpButton').click(function () {
+
+                $("#slideImage").slideUp();
+            });
+            //7
+            $('#slideToggleButton').click(function () {
+
+                $("#slideToggleImage").slideToggle();
+            });
+            //8 
+            $('#fadeInButton').click(function () {
+
+                $("#fadeInOutImage").fadeIn();
+            });
+            //9
+            $('#fadeOuteButton').click(function () {
+
+                $("#fadeInOutImage").fadeOut();
+            });
+            //10
+            $('#addClassButton').click(function () {
+
+                $("#theP").addClass("blueClase");
+            });
+            //11    
+            $('#beforeButton').click(function () {
+
+                $("#theInMiddle").before("Before");
+            });
+            //12
+            $('#afterButton').click(function () {
+
+                $("#theInMiddle").after("After");
+            });
+            //13
+            $('#appendButton').click(function () {
+
+                $("#theInMiddle").append("Append");
+            });
+            //14  
+            $('#htmlButton').click(function () {
+
+                $("#theP_HTML").html("<b>Ali Argabi</b>");
+            });
+            //15  
+            $('#attrButton').click(function () {
+
+                $("#attrImage").attr("src", "apple.jpg");
+            });
+            //16
+            $('#valButton').click(function () {
+                alert($("#txtBox").val());
+                
+            });
+            //17    
+            $('#textButton').click(function () {
+
+                $("#theTXT").text("<p>This is a test</p>");
+            });
+
+
+        });
+
+    </script>
+
 </head>
+
 <body>
-    
+
+    <h1 style="color:yellow;">17 jQuery Functions</h1>
+    <hr>
+
+    <!--1-->
+    <div class="theFunctionBox">
+        <h1>1. click</h1>
+        <hr>
+        <button id="clickMe">click me</button>
+    </div>
+    <!--2 | 3-->
+    <div class="theFunctionBox">
+        <h1>2. hide | 3. show</h1>
+        <hr>
+        <img id="hideShowImage" src="CD.png" alt="no image">
+        <button id="hideButton">hide</button>
+        <button id="showButton">show</button>
+    </div>
+    <!--4-->
+    <div class="theFunctionBox">
+        <h1>4. toggle</h1>
+        <hr>
+        <img id="toggleImage" src="CD.png" alt="no image">
+        <button id="toggleButton">hide/show</button>
+    </div>
+    <!--5 | 6-->
+    <div class="theFunctionBox">
+        <h1>5. slideDown | 6. slideUp</h1>
+        <hr>
+        <img id="slideImage" src="CD.png" alt="no image">
+        <button id="slideUpButton">slideUp</button>
+        <button id="slideDownButton">slideDown</button>
+    </div>
+    <!--7-->
+    <div class="theFunctionBox">
+        <h1>7. slideToggle</h1>
+        <hr>
+        <img id="slideToggleImage" src="CD.png" alt="no image">
+        <button id="slideToggleButton">slideToggle</button>
+    </div>
+    <!--8 | 9-->
+    <div class="theFunctionBox">
+        <h1>8. fadeIn | 9. fadeOut</h1>
+        <hr>
+        <img id="fadeInOutImage" src="CD.png" alt="no image">
+        <button id="fadeOuteButton">fadeOut</button>
+        <button id="fadeInButton">fadeIn</button>
+    </div>
+    <!--10-->
+    <div class="theFunctionBox">
+        <h1>10. addClass</h1>
+        <hr>
+        <p id="theP">addClass = Blue</p>
+        <button id="addClassButton">addClass</button>
+    </div>
+    <!--11 | 12| |13 -->
+    <div class="theFunctionBox">
+        <h1>11. befor | 12. after | 13. append</h1>
+        <hr>
+        <p id="theInMiddle">****** ALi ******</p>
+        <hr>
+        <button id="beforeButton">before</button>
+        <button id="afterButton">after</button>
+        <button id="appendButton">append</button>
+    </div>
+    <!--14-->
+    <div class="theFunctionBox">
+        <h1>14. HTML</h1>
+        <hr>
+        <p id="theP_HTML">HTML = my name to bolde </p>
+        <button id="htmlButton">HTML</button>
+    </div>
+    <!--15-->
+    <div class="theFunctionBox">
+        <h1>15. attr</h1>
+        <hr>
+        <img id="attrImage" src="CD.png" alt="no image">
+        <button id="attrButton">attr = src</button>
+    </div>
+    <!--16-->
+    <div class="theFunctionBox">
+        <h1>16. val</h1>
+        <hr>
+        <input type="text" id="txtBox" value="this is the Value of the Textbox :)">
+        <hr>
+        <button id="valButton">val</button>
+    </div>
+    <!--17-->
+    <div class="theFunctionBox">
+            <h1>17. text</h1>
+            <hr>
+            <p id="theTXT">textttttttttttttttttttt</p>
+            <hr>
+            <button id="textButton">Text</button>
+        </div>
+
+
 </body>
+
 </html>

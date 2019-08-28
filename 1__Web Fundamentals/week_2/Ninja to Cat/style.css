@@ -1,0 +1,16 @@
+
+.imageBox
+{
+    display: inline-block;
+    width: 181px;
+    height: 42px;
+}
+.imageBox img
+{
+    display: inline; 
+}
+
+body
+{
+    background-color: brown;
+}

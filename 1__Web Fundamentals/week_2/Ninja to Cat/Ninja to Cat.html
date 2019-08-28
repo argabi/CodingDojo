@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ninja to Cat</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+
+    <script>
+
+
+        $(document).ready(function () {
+            
+            // $(this).replaceWith($('<h5>' + this.innerHTML + '</h5>'));
+
+            $('.imageBox img').click( function () {
+                
+               var oldImg = $(this).attr('src');
+               var newImg = $(this).attr('data-alt-src');
+              
+              //swapping
+               $(this).attr('data-alt-src',oldImg);
+               $(this).attr('src',newImg);
+
+                
+            })
+
+            
+
+           
+        });
+
+    </script>
+
+</head>
+<body>
+
+    
+        <div class="imageBox">
+                <img src="img/cat0.png" data-alt-src='img/ninja0.png' alt="Error Img0">
+                <img src="img/cat1.png" data-alt-src='img/ninja1.png' alt="Error Img1">
+                <img src="img/cat2.png" data-alt-src='img/ninja2.png' alt="Error Img2">
+                <img src="img/cat3.png" data-alt-src='img/ninja3.png' alt="Error Img3">
+                <img src="img/cat4.png" data-alt-src='img/ninja4.png' alt="Error Img4">
+        </div>
+    
+    
+</body>
+</html>
