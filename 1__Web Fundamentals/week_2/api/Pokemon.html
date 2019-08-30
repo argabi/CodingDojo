@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment: Pokemon</title>
+
+</head>
+
+<body>
+    <h1>Assignment: Pokemon : Ali Argabi</h1>
+    <div id="pImages"></div>
+
+
+
+    
+
+    <script>
+
+            function loadImages(num) {
+                var output = "";
+        
+                for (var x = 1; x <= num; x++) 
+                {
+                    output += "<img src='http://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/" + x + ".png'>";
+                }
+        
+                document.getElementById("pImages").innerHTML = output;
+            }
+        
+            loadImages(151);
+        
+        
+        </script>
+</body>
+
+
+
+
+
+
+
+</html>
