@@ -28,15 +28,33 @@ class BankAccount:
         return self
 
 # ****************************************************************************************************************
+  
 
-acount1 = BankAccount(1500,0.02)
-acount2 = BankAccount(3000)
+class User:
+    def __init__(self, name, email):
+        self.name = name
+        self.email = email
+        self.account = BankAccount( balance=0.00 ,int_rate=0.02)	# added this line
 
-acount1.display_account_info()
-acount2.display_account_info()
-#_________________________________________
-print("-------"*9)
-acount1.deposit(300).deposit(200).deposit(100).withdraw(100).yield_interest().display_account_info()
-#_________________________________________
-print("-------"*9)
-acount2.deposit(1000).deposit(500).withdraw(100).withdraw(50).withdraw(150).withdraw(200).yield_interest().display_account_info()
+    def make_deposit(self,amount):
+        self.account.deposit(amount)
+        return self
+
+    def make_withdrawal(self,amount):
+        self.account.withdraw(amount)
+        return self
+
+    def display_user_balance(self):
+        print("User:",self.name, "Balance:", "$" + str(self.account.accountBalance)	)	# or access its attributes
+        return self
+
+
+# ****************************************************************************************************************
+aqil = User("Aqil", "Aqil@gmail.com")
+ali = User("Ali Argabi", "alargabi@gmail.com")
+
+ali.make_withdrawal(1000)
+ali.make_deposit(3000)
+ali.display_user_balance()
+
+aqil.display_user_balance()
