@@ -1,8 +1,8 @@
 # Ignore file name such as "ali.txt"
 
 
-# ignore Folder name  must in the end /
+# ignore Folder name  must add in the end /
 py3Env/
 
 
-#inore all file    such as *.java
+#inore all files    such as *.java

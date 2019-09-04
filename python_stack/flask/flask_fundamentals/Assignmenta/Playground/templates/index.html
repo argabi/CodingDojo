@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #cenetering {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+            color: red;
+        }
+
+        .theBox {
+            display: inline-block;
+            border: 2px solid black;
+            background-color: #9FC5F8;
+            margin: 5px;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id=cenetering>
+        <h1>Welcome!</h1>
+        
+
+        {% for x in range(0,numberOfBoxes): %}
+        <div class=theBox style="background-color:{{ColorName}};"></div>
+        {% endfor %}
+        
+    </div>
+
+</body>
+
+</html>
