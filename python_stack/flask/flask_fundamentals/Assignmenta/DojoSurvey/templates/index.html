@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Dojo Survey | index </title>
+</head>
+
+<body>
+
+    <div class="jumbotron">
+
+        <form action='/result' method='post'>
+            <div class="form-group row">
+                <label for="yourName" class="col-sm-2 col-form-label">Your Name :</label>
+                
+                    <input type="text" class="form-control col-sm-10" name="yourName">
+                
+            </div>
+           
+            <div class="form-group row">
+                <label for="DojoLocation" class="col-sm-2 col-form-label" >Dojo Location :</label>
+                <select class="form-control col-sm-10" name="DojoLocation">
+                    <option>San Jose</option>
+                    <option>NewYourk</option>
+                    <option>DC</option>
+                    <option>KSA</option>
+                </select>
+            </div>
+
+            <div class="form-group row">
+                <label for="FacoriteLanguage" class="col-sm-2 col-form-label" >Facorite Language :</label>
+                <select class="form-control col-sm-10" name="FacoriteLanguage">
+                    <option>Python</option>
+                    <option>Java</option>
+                    <option>Java Script</option>
+                    <option>C#</option>
+                    <option>C++</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="Comment">Comment (optional) :</label>
+                <textarea class="form-control" name="Comment" rows="3"></textarea>
+            </div>
+
+            <input type='submit' class="btn btn-primary btn-lg " value='Send'>
+            
+        </form>
+
+    </div>
+
+</body>
+
+</html>
