@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Checkerboard</title>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+
+<body>
+    <div id='theMap'>
+        {% for theRows in range(needsRows): %}
+        {% for theColums in range(needsColums): %}
+        <div class='color{{ (theRows+theColums)%2+1 }}'></div>
+        {% endfor %}
+        <br>
+        {% endfor %}
+
+
+    </div>
+
+
+    <script>
+
+        function DiscplayMap(rowsNeeds, columNeeds) {
+            var output = "";
+            var colorKey = { 1: 2, 2: 1 }
+            colorNowis = 1
+            counterCol = 0
+            for (var rows = 0; rows < rowsNeeds; rows++) {
+
+                for (counterCol = 0; counterCol < columNeeds; counterCol++) {
+                    output += "<div class='color" + colorNowis + "'></div>"
+                    colorNowis = colorKey[colorNowis] // switching color number from 1 to 2 automaticily :)
+
+
+                }
+                colorNowis = colorKey[colorNowis] // switching color number from 1 to 2 automaticily :)
+                output += "<br>"
+            }
+
+
+            document.getElementById("theMap").innerHTML = output
+        }
+
+
+
+       //DiscplayMap(8, 8);
+
+    </script>
+</body>
+
+
+</html>
