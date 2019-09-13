@@ -19,13 +19,13 @@
         <form action='/result' method='post'>
             <div class="form-group row">
                 <label for="yourName" class="col-sm-2 col-form-label">Your Name :</label>
-                
-                    <input type="text" class="form-control col-sm-10" name="yourName">
-                
+
+                <input type="text" class="form-control col-sm-10" name="yourName">
+
             </div>
-           
+
             <div class="form-group row">
-                <label for="DojoLocation" class="col-sm-2 col-form-label" >Dojo Location :</label>
+                <label for="DojoLocation" class="col-sm-2 col-form-label">Dojo Location :</label>
                 <select class="form-control col-sm-10" name="DojoLocation">
                     <option>San Jose</option>
                     <option>NewYourk</option>
@@ -35,7 +35,7 @@
             </div>
 
             <div class="form-group row">
-                <label for="FacoriteLanguage" class="col-sm-2 col-form-label" >Facorite Language :</label>
+                <label for="FacoriteLanguage" class="col-sm-2 col-form-label">Facorite Language :</label>
                 <select class="form-control col-sm-10" name="FacoriteLanguage">
                     <option>Python</option>
                     <option>Java</option>
@@ -51,9 +51,18 @@
             </div>
 
             <input type='submit' class="btn btn-primary btn-lg " value='Send'>
-            
-        </form>
 
+        </form>
+        {% with messages = get_flashed_messages() %}
+        <!-- declare a variable called messages -->
+        {% if messages %}
+        <!-- check if there are any messages -->
+        {% for message in messages %}
+        <!-- loop through the messages -->
+        <p>{{message}}</p> <!-- display each message in a paragraph tag -->
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
     </div>
 
 </body>
