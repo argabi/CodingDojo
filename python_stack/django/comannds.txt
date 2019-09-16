@@ -1,0 +1,12 @@
+#1 create project folder
+django-admin startproject your_project_name_here
+
+#2 run it 
+python manage.py runserver
+
+#3 create apps's folder
+mkdir apps
+
+#4 For every app we want to add to our projec
+apps> python ../manage.py startapp your_app_name_here 
+
