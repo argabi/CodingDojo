@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment: Random Word Generator</title>
+</head>
+<body>
+    
+    <h1>Assignment: Random Word Generator Alii</h1>
+    <hr>
+    <h2>counter # {{request.session.counter_}}</h2>
+    <br>
+    <form action="genPage" method="POST">
+        {% csrf_token %}
+        <h1>TXT: {{request.session.ranString}}</h1>
+        <button type="Generate">Submit</button>
+    </form>
+</body>
+</html>

@@ -10,12 +10,43 @@ mkdir apps
 #4 For every app we want to add to our projec
 apps> python ../manage.py startapp your_app_name_here 
 
-
-______________________________
+*************************************
+#5 if u want use session 
+python manage.py migrate
+____________________________________________________________
+____________________________________________________________
+____________________________________________________________
 # sittings
 'apps.app1',
 
 __________________________
-# urls
+# urls  project 
+from django.contrib import admin
+from django.urls import path ,include
 
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('',include('apps.app1.urls'))
+]
+_______________________________________
+#urls app
+
+from django.urls import path 
+from . import views
+
+urlpatterns = [
+    path('',views.run)
+]
+
+_____________________________________
+# view
+from django.shortcuts import render
+
+from time import gmtime, strftime # for time
+
+def run(request):
+    context = {
+        "time": strftime("%Y-%m-%d %H:%M %p", gmtime())
+    }
+    return render(request,'index.html', context)
 
