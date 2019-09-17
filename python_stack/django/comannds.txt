@@ -10,3 +10,12 @@ mkdir apps
 #4 For every app we want to add to our projec
 apps> python ../manage.py startapp your_app_name_here 
 
+
+______________________________
+# sittings
+'apps.app1',
+
+__________________________
+# urls
+
+
