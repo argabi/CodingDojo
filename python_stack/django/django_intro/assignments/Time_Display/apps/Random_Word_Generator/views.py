@@ -3,7 +3,7 @@
 from django.shortcuts import render , redirect
 from django.utils.crypto import get_random_string # for random String
 
-get_random_string(length=14) # 14 characters
+get_random_string(length=  14 ) # 14 characters
 def index(request):
     request.session["ranString"] = get_random_string(length=14) # 14 characters # update with new
     request.session['counter_'] =1
