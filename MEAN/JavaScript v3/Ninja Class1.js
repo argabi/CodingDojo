@@ -1,4 +1,4 @@
-//Assignment: Ninja Class 1
+//Assignment: Ninja Class 1   using ES5
 
 function Ninja (name){
 
