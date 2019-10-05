@@ -1,0 +1,11 @@
+body{
+    background-color: aqua;
+}
+.center
+{
+    text-align: center;
+    display: block;
+}
+.pinkBack{
+    background-color: #BA67C8;
+}
