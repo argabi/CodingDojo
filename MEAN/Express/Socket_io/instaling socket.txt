@@ -1,0 +1,11 @@
+npm init -y
+
+npm install --save express
+
+npm install --save socket.io
+
+npm install ejs
+
+
+
+nodemon server.js
