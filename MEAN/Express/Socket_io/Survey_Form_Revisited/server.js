@@ -1,36 +1,32 @@
-//
-const express = require("express");
-const app = express();
-//////////////////////////////////////////////
-//port number
-const server = app.listen(8000, () => console.log("listening on port 8000"));
-//static folder path
-app.use(express.static(__dirname + "/static"));
-//////////////////////////////////////////////
-// ejs 
-app.set('view engine', 'ejs');
-app.set('views', __dirname + '/views');
-//////////////////////////////////////////////
-//Socket
-const io = require('socket.io')(server);
+// idk why it is not working  :(
 
-//////////////////////////////////////////////
-//////////////////////////////////////////////
+var express = require('express');
+var socket = require('socket.io');
 
-io.on('connection', function (socket) { //2
-  
-    socket.emit('greeting', { msg: 'Greetings, from server Node, brought to you by Sockets! -Server' }); //3
-    socket.on('thankyou', function (data) { //7
-      console.log(data.msg); //8 (note: this log will be on your server's terminal)
-    });
-      
-  });
-
-
-////////////////// Routing ///////////////////
-
-//index
-app.get('/', (req, res) => {
-   res.render("index")
+var app = express();
+var server = app.listen(8000, function(){
+    console.log("Listening on port 8000");
 });
 
+//create a folder to store static files
+app.use(express.static('public'));
+
+//setup socket
+var io = socket(server);
+
+io.on('connection', function(socket){
+    console.log("Connected to socket 'connection'", socket.id);
+
+    //chat event handler
+    socket.on('sending', function(data){
+        //where and what do we do? send it to the clients
+        io.sockets.emit('f', 'data');
+        console.log('i got sending')
+    });
+
+    socket.on('sending', function(data){
+        //broadcast
+        console.log('i got sending   broadcast')
+        socket.broadcast.emit('typing', data); 
+    });
+});
