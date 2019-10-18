@@ -1,2 +1,5 @@
 npm init -y
 npm install express ejs mongoose
+
+npm i express-session
+npm i express-flash

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment: Quoting Dojo</title>
+
+</head>
+
+<body>
+
+    <h1>Quotes</h1>
+    <a href="/">Home</a>
+
+
+    <br>
+
+    <h3>Here are the awsome qoutes</h3><br/>
+    <h1>Here are the Quotes!</h1>
+    <% for (var x in arr) { %>
+        <h4>"<%= arr[x].quote %>"</h4>
+        <h3>-<%= arr[x].name %> </h3>
+        <hr>
+    <% } %>
+</body>
+
+</html>
