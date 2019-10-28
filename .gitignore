@@ -4,6 +4,7 @@ aliFilllArray.js
 # ignore Folder name  must add in the end /
 py3Env/
 my_environments/
+node_modules/
 
 
 #inore all files    such as *.java

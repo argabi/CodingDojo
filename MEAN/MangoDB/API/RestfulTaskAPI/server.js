@@ -83,7 +83,9 @@ app.post('/new', (req, res) => {
 //4- PUT: Update a Task by ID
 app.put('/update/:id/',(req, res, t, d) => {
     theTask.updateOne({_id : req.params.id}, {title: t,description: d})
-            .then(data => {res.json({data: data})})
+            .then(data => {res.json({data: data})
+            console.log("We ali!");
+        })
             .catch(err => {
                 console.log("We have an error!", err);
                 for (var key in err.errors)
