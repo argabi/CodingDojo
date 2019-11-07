@@ -5,6 +5,7 @@ aliFilllArray.js
 py3Env/
 my_environments/
 node_modules/
+.metadata/
 
 
 #inore all files    such as *.java
