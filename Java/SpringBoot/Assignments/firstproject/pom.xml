@@ -8,12 +8,12 @@
 		<version>2.2.1.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.argabi.firstproject</groupId>
-	<artifactId>firstproject</artifactId>
+	<groupId>com.argabi.displaydate</groupId>
+	<artifactId>DisplayDate</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>firstproject</name>
-	<description>first project in Spring Boot</description>
+	<description>Display Date in Spring Boot</description>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -40,14 +40,6 @@
 					<artifactId>junit-vintage-engine</artifactId>
 				</exclusion>
 			</exclusions>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.tomcat.embed</groupId>
-			<artifactId>tomcat-embed-jasper</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>jstl</artifactId>
 		</dependency>
 	</dependencies>
 
