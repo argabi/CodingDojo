@@ -1,10 +1,10 @@
-package com.argabi.displaydate;
+package com.argabi.counter;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class FirstprojectApplicationTests {
+class CounterApplicationTests {
 
 	@Test
 	void contextLoads() {

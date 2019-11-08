@@ -1,13 +1,13 @@
-package com.argabi.displaydate;
+package com.argabi.counter;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FirstprojectApplication {
+public class CounterApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(FirstprojectApplication.class, args);
+		SpringApplication.run(CounterApplication.class, args);
 	}
 
 }
