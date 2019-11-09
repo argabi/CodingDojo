@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<h1> You Visited Us < c:out value="${VisiterNumber}" /> times. </h1> 
+<h1> You Visited Us < c:out value="${sessionCountter}" /> times. </h1> 
 
 
 <br>

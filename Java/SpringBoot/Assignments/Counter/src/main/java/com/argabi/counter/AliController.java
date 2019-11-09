@@ -3,27 +3,25 @@ package com.argabi.counter;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class AliController {
-
-	int  theCounter = 0;
 	
 	//index
 	@RequestMapping("/")
 	public String home(HttpSession session ) {
 		
-		//adding seasion
-		session.setAttribute("count", theCounter++); // add session's value
+		// get session's Value , session always is an opject data type so u have to  convert it
+		Integer count = (Integer) session.getAttribute("sessionCountter"); 
 		
+		// new session
+		if (count==null) {
+			count =0;
+			session.setAttribute("sessionCountter", count); // count = 0
+		}
 		
-		//reading session
-		/////////////////////////////////////
-		Integer count = (Integer) session.getAttribute("count"); // get session's Value , session always is an opject data type so u have to  convert it
-		System.out.println(count);
-		/////////////////////////////////////
+		session.setAttribute("sessionCountter", count+1);
 		
 		return "index.jsp";
 	}
@@ -31,8 +29,9 @@ public class AliController {
 	
 	//display counter page
 	@RequestMapping("/counter")
-	public String counterPage(Model model) {
-		model.addAttribute("VisiterNumber", theCounter);
+	public String counterPage(HttpSession session) {
+		
+		session.getAttribute("sessionCountter");  // < c:out value="${sessionCountter}" />
 		return "counterPage.jsp";
 	}
 	
