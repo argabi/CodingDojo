@@ -16,7 +16,7 @@ import javax.persistence.Table;
 @Table(name="licenses")
 public class License {
 
-	 @Id
+	 	@Id
 	    @GeneratedValue(strategy = GenerationType.IDENTITY)
 	    private Long id;
 	 

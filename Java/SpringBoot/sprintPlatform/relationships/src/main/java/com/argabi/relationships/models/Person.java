@@ -20,11 +20,12 @@ public class Person {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     
-	private String firstName;
+	private String firstName; 
     private String lastName;
     
     @Column(updatable=false)
     private Date createdAt;
+    
     private Date updatedAt;
     
     @OneToOne(mappedBy="person", cascade=CascadeType.ALL, fetch=FetchType.LAZY)
@@ -36,6 +37,11 @@ public class Person {
 	public Person() {
 	        
 	    }
+	
+	public Person(String firstName , String lastName) {
+	this.firstName=firstName;
+	this.lastName = lastName;
+    }
 
 	public Long getId() {
 		return id;

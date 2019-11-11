@@ -43,29 +43,24 @@ public class BookService {
     // To update a book, you will have to use the setter methods from the domain model and then call the save method.
    
     //    update a book  id, title, desc, lang, numOfPages
-    public Book updateBook(Long id, String title,String desc, String lang,Integer numOfPages) { 
+    public Book updateBook(Long id, String title,String desc, String lang,Integer numberOfPages) { 
     	
-    	Book theBook = new Book();
-    	
-    	//search for the specific book 
     	Optional<Book> optionalBook = book_Repository.findById(id);
-      
-    	//if found
-    	if( optionalBook.isPresent()) {
-        	theBook = optionalBook.get();
-        }
-    	else 
-    	{
-	        return null; // not found // stop here 
-	    }
-        
-    	//updating values
-        theBook.setTitle(title);
-        theBook.setDescription(desc);
-        theBook.setLanguage(lang);
-        theBook.setNumberOfPages(numOfPages);
     	
-        return book_Repository.save(theBook); //update
+		  if(optionalBook.isPresent()) {
+			  Book theBook = optionalBook.get();
+			  
+			  //update values set values
+			  theBook.setTitle(title);
+			  theBook.setDescription(desc);
+			  theBook.setLanguage(lang);
+			  theBook.setNumberOfPages(numberOfPages);
+			  
+			  return book_Repository.save(theBook);  //update
+			  
+	        } else {
+	            return null;
+	        }
     }
     
     //delete a book
