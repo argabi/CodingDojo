@@ -23,6 +23,7 @@ public class DojoService {
 	public List<Dojo> all() {
 		return (List<Dojo>) dojoRepo.findAll();
 	}
+	
 	public Dojo getOne(Long id) {
 		Optional<Dojo> optionalBook = dojoRepo.findById(id);
         if(optionalBook.isPresent()) {
