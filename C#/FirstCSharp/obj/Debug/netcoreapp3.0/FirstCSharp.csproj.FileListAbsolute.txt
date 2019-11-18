@@ -1,0 +1,11 @@
+C:\Users\Ali Argabi\Documents\GitHub\CodingDojo\C#\FirstCSharp\bin\Debug\netcoreapp3.0\FirstCSharp.exe
+C:\Users\Ali Argabi\Documents\GitHub\CodingDojo\C#\FirstCSharp\bin\Debug\netcoreapp3.0\FirstCSharp.deps.json
+C:\Users\Ali Argabi\Documents\GitHub\CodingDojo\C#\FirstCSharp\bin\Debug\netcoreapp3.0\FirstCSharp.runtimeconfig.json
+C:\Users\Ali Argabi\Documents\GitHub\CodingDojo\C#\FirstCSharp\bin\Debug\netcoreapp3.0\FirstCSharp.runtimeconfig.dev.json
+C:\Users\Ali Argabi\Documents\GitHub\CodingDojo\C#\FirstCSharp\bin\Debug\netcoreapp3.0\FirstCSharp.dll
+C:\Users\Ali Argabi\Documents\GitHub\CodingDojo\C#\FirstCSharp\bin\Debug\netcoreapp3.0\FirstCSharp.pdb
+C:\Users\Ali Argabi\Documents\GitHub\CodingDojo\C#\FirstCSharp\obj\Debug\netcoreapp3.0\FirstCSharp.csprojAssemblyReference.cache
+C:\Users\Ali Argabi\Documents\GitHub\CodingDojo\C#\FirstCSharp\obj\Debug\netcoreapp3.0\FirstCSharp.AssemblyInfoInputs.cache
+C:\Users\Ali Argabi\Documents\GitHub\CodingDojo\C#\FirstCSharp\obj\Debug\netcoreapp3.0\FirstCSharp.AssemblyInfo.cs
+C:\Users\Ali Argabi\Documents\GitHub\CodingDojo\C#\FirstCSharp\obj\Debug\netcoreapp3.0\FirstCSharp.dll
+C:\Users\Ali Argabi\Documents\GitHub\CodingDojo\C#\FirstCSharp\obj\Debug\netcoreapp3.0\FirstCSharp.pdb
