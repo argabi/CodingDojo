@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ali Argabi\\Documents\\GitHub\\CodingDojo\\C#\\FirstCSharp\\FirstCSharp.csproj": {}
+    "/home/argabi/Desktop/CodingDojo/C#/FirstCSharp/FirstCSharp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ali Argabi\\Documents\\GitHub\\CodingDojo\\C#\\FirstCSharp\\FirstCSharp.csproj": {
+    "/home/argabi/Desktop/CodingDojo/C#/FirstCSharp/FirstCSharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ali Argabi\\Documents\\GitHub\\CodingDojo\\C#\\FirstCSharp\\FirstCSharp.csproj",
+        "projectUniqueName": "/home/argabi/Desktop/CodingDojo/C#/FirstCSharp/FirstCSharp.csproj",
         "projectName": "FirstCSharp",
-        "projectPath": "C:\\Users\\Ali Argabi\\Documents\\GitHub\\CodingDojo\\C#\\FirstCSharp\\FirstCSharp.csproj",
-        "packagesPath": "C:\\Users\\Ali Argabi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ali Argabi\\Documents\\GitHub\\CodingDojo\\C#\\FirstCSharp\\obj\\",
+        "projectPath": "/home/argabi/Desktop/CodingDojo/C#/FirstCSharp/FirstCSharp.csproj",
+        "packagesPath": "/home/argabi/.nuget/packages/",
+        "outputPath": "/home/argabi/Desktop/CodingDojo/C#/FirstCSharp/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Ali Argabi\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/argabi/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
@@ -48,12 +45,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.0.1, 3.0.1]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[3.0.2, 3.0.2]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,1 +1,4 @@
 dotnet new console -o FirstCSharp
+
+
+dotnet run
