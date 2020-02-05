@@ -1,0 +1,11 @@
+/home/argabi/Desktop/CodingDojo/C#/assignments/CollectionsPractice/bin/Debug/netcoreapp3.1/CollectionsPractice
+/home/argabi/Desktop/CodingDojo/C#/assignments/CollectionsPractice/bin/Debug/netcoreapp3.1/CollectionsPractice.deps.json
+/home/argabi/Desktop/CodingDojo/C#/assignments/CollectionsPractice/bin/Debug/netcoreapp3.1/CollectionsPractice.runtimeconfig.json
+/home/argabi/Desktop/CodingDojo/C#/assignments/CollectionsPractice/bin/Debug/netcoreapp3.1/CollectionsPractice.runtimeconfig.dev.json
+/home/argabi/Desktop/CodingDojo/C#/assignments/CollectionsPractice/bin/Debug/netcoreapp3.1/CollectionsPractice.dll
+/home/argabi/Desktop/CodingDojo/C#/assignments/CollectionsPractice/bin/Debug/netcoreapp3.1/CollectionsPractice.pdb
+/home/argabi/Desktop/CodingDojo/C#/assignments/CollectionsPractice/obj/Debug/netcoreapp3.1/CollectionsPractice.csprojAssemblyReference.cache
+/home/argabi/Desktop/CodingDojo/C#/assignments/CollectionsPractice/obj/Debug/netcoreapp3.1/CollectionsPractice.AssemblyInfoInputs.cache
+/home/argabi/Desktop/CodingDojo/C#/assignments/CollectionsPractice/obj/Debug/netcoreapp3.1/CollectionsPractice.AssemblyInfo.cs
+/home/argabi/Desktop/CodingDojo/C#/assignments/CollectionsPractice/obj/Debug/netcoreapp3.1/CollectionsPractice.dll
+/home/argabi/Desktop/CodingDojo/C#/assignments/CollectionsPractice/obj/Debug/netcoreapp3.1/CollectionsPractice.pdb
