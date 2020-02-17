@@ -8,8 +8,9 @@ namespace FirstCSharp
        
         static void Main(string[] args)
         {
-             Random rand = new Random();
-            Console.WriteLine(rand.Next(2,8));
+            int num = Int32.Parse("24");
+
+            Console.WriteLine(num);
         }
     }
 }
