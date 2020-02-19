@@ -23,7 +23,8 @@
 /home/argabi/Desktop/for Learning/CodingDojo/C#/ASP.NET/HelloMVC/obj/Debug/netcoreapp3.1/HelloMVC.TagHelpers.input.cache
 /home/argabi/Desktop/for Learning/CodingDojo/C#/ASP.NET/HelloMVC/obj/Debug/netcoreapp3.1/HelloMVC.TagHelpers.output.cache
 /home/argabi/Desktop/for Learning/CodingDojo/C#/ASP.NET/HelloMVC/obj/Debug/netcoreapp3.1/HelloMVC.RazorCoreGenerate.cache
-/home/argabi/Desktop/for Learning/CodingDojo/C#/ASP.NET/HelloMVC/obj/Debug/netcoreapp3.1/Razor/Views/Home/index.cshtml.g.cs
 /home/argabi/Desktop/for Learning/CodingDojo/C#/ASP.NET/HelloMVC/obj/Debug/netcoreapp3.1/HelloMVC.RazorTargetAssemblyInfo.cs
 /home/argabi/Desktop/for Learning/CodingDojo/C#/ASP.NET/HelloMVC/obj/Debug/netcoreapp3.1/HelloMVC.Views.pdb
 /home/argabi/Desktop/for Learning/CodingDojo/C#/ASP.NET/HelloMVC/obj/Debug/netcoreapp3.1/HelloMVC.csproj.CopyComplete
+/home/argabi/Desktop/for Learning/CodingDojo/C#/ASP.NET/HelloMVC/obj/Debug/netcoreapp3.1/Razor/Views/Home/HomeHTML.cshtml.g.cs
+/home/argabi/Desktop/for Learning/CodingDojo/C#/ASP.NET/HelloMVC/obj/Debug/netcoreapp3.1/Razor/Views/Home/aliPage.cshtml.g.cs
