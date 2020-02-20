@@ -3,13 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Hello ASP HTML</title>
+
+     <!-- // In this context '~' refers to the wwwroot folder -->
+    <link rel="stylesheet" href="~/css/style.css">
 </head>
 <body>
 
 
-    <h1> Hello THERE!</h1>
+    <h1> Hello THERE!ee</h1>
     <br>
     <h3><a href="/hello">Say Hello</a></h3>
+
+    <h1>@ViewBag.ali</h1>
+
+    @{
+    string LocalString = ViewBag.Example + " Good to see you!";
+}
+<h1>@LocalString</h1>
+
+
 </body>
 </html>

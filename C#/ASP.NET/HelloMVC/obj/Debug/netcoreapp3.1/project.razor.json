@@ -20501,6 +20501,11 @@
   "RootNamespace": "HelloMVC",
   "Documents": [
     {
+      "FilePath": "/home/argabi/Desktop/for Learning/CodingDojo/C#/ASP.NET/HelloMVC/Views/Home/Method_HTML_Page.cshtml",
+      "TargetPath": "Views/Home/Method_HTML_Page.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/argabi/Desktop/for Learning/CodingDojo/C#/ASP.NET/HelloMVC/Views/Home/aliPage.cshtml",
       "TargetPath": "Views/Home/aliPage.cshtml",
       "FileKind": "mvc"

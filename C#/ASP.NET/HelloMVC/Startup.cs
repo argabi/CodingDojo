@@ -17,7 +17,7 @@ namespace HelloMVC
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc(option => option.EnableEndpointRouting = false);
-            
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -27,9 +27,13 @@ namespace HelloMVC
             {
                 app.UseDeveloperExceptionPage();
             }
-
-            app.UseMvc();
             
+            //added for css js images  folder name MUST be "wwwroot"
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
+
+            app.UseMvc(); //added for MVC
+
         }
     }
 }

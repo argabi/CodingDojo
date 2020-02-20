@@ -28,3 +28,4 @@
 /home/argabi/Desktop/for Learning/CodingDojo/C#/ASP.NET/HelloMVC/obj/Debug/netcoreapp3.1/HelloMVC.csproj.CopyComplete
 /home/argabi/Desktop/for Learning/CodingDojo/C#/ASP.NET/HelloMVC/obj/Debug/netcoreapp3.1/Razor/Views/Home/HomeHTML.cshtml.g.cs
 /home/argabi/Desktop/for Learning/CodingDojo/C#/ASP.NET/HelloMVC/obj/Debug/netcoreapp3.1/Razor/Views/Home/aliPage.cshtml.g.cs
+/home/argabi/Desktop/for Learning/CodingDojo/C#/ASP.NET/HelloMVC/obj/Debug/netcoreapp3.1/Razor/Views/Home/Method_HTML_Page.cshtml.g.cs

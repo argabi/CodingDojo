@@ -69,9 +69,19 @@ namespace HelloMVC
         {
             Console.WriteLine("ALi  redirecting by Param...");
 
-            var contextParam = new{ username="ali_param", location="KSA_param"}; // annonimiose objects
+            var contextParam = new { username = "ali_param", location = "KSA_param" }; // anonymous objects
 
-            return RedirectToAction("HelloUser",contextParam); // method name "HelloUser" and passing the parametrs
+            return RedirectToAction("HelloUser", contextParam); // method name "HelloUser" and passing the parametrs
+        }
+
+        // by Json for Front-End
+        [HttpGet("json/{username}/{location}")]//hello
+        public JsonResult HelloJason(string username, string location) /// this is better from then the above RedirectResult"
+        {
+
+            var response = new { user = username, place = location }; // anonymous objects
+            //can be any onject return as response suck as array obkect string ..etc
+            return Json(response);
         }
 
         // by all in one  __ interface --
@@ -83,6 +93,66 @@ namespace HelloMVC
         //   return RedirectToAction();
         //   //etc      
         // }
+
+
+        //****************************************************************************************************************************************
+        //        ViewBag 
+        // is using for passing date to html page
+
+        /*  YourController.cs
+        [HttpGet("")]
+        public IActionResult Index()
+        {
+            // Here we assign the value "Hello World!" to the property .Example
+            // Property names are arbitrary and can be whatever you like
+            ViewBag.Example = "Hello World!";
+            return View();
+        }
+        */
+
+        /* Index.cshtml
+        <h1>@ViewBag.Example</h1>
+        */
+
+        /*  Index.cshtml
+        @{
+            string LocalString = ViewBag.Example + " Good to see you!";
+        }
+        <h1>@LocalString</h1>
+        */
+
+        [HttpGet("/bag")]
+        public IActionResult View_Bag()
+        {
+            DateTime CurrentTime = DateTime.Now;
+
+            // Here we assign the value "Hello World!" to the property .ali
+            // Property names are arbitrary and can be whatever you like
+            ViewBag.ali = "Hello World! the ali";
+            ViewBag.Example = CurrentTime;
+            return View("HomeHTML"); //html page
+        }
+
+        //____________________________________   POST   ____________________________________
+        //for Method_HTML_Page
+        [HttpGet("post")]
+        public IActionResult rendring_Method_HTML_Page()
+        {
+            return View("Method_HTML_Page");
+        }
+
+        //post method
+        [HttpPost("post")] // from html form action="/post" method="post"
+        public IActionResult Method_HTML_Page(string TextField, int NumberField)
+        {
+            Console.WriteLine(TextField + " | " + NumberField);
+            return RedirectToAction("Index");//index method ( i used the best )
+        }
+
+
+
+
+
 
 
 
